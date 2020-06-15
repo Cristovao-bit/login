@@ -1,0 +1,110 @@
+/* 
+    Created on : 08/01/2019, 12:01:51
+    Author     : ML - Manutenção Lira
+*/
+
+body{
+    background: url(../img/tela.jpg)no-repeat;
+}
+
+.loginBox{
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    transition: 0.5s;
+}
+
+.loginBox:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,1);
+}
+
+.glass{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    transition: 0.5s;
+}
+
+.glass:hover{
+    transform: translate(20px,20px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+h3{
+    margin: 0;
+    padding: 0 0 20px;
+    color: #262626;
+    text-align: center;
+}
+
+.loginBox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"]{
+    border: none;
+    border-bottom: 2px solid #262626;
+    outline: none;
+    height: 40px;
+    color: #262626;
+    background: transparent;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+::placeholder{
+    color: rgba(0,0,0,0.5);
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputBox span{
+    position: absolute;
+    top: 8px;
+    color: #262626;
+}
+
+.loginBox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background: #ed292a;
+    border-radius: 20px;
+    text-shadow: 1px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.loginBox input[type="submit"]:hover{
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+.loginBox a{
+    color: #262626;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}

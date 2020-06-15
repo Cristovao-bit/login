@@ -1,0 +1,162 @@
+.login{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, #3f51b5, #00bcd4);
+    animation: animate 20s linear infinite;
+}
+
+.login:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 100vh solid transparent;
+    border-left: 100vh solid #fff;
+    opacity: 0.1;
+}
+
+.login:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top: 100vh solid transparent;
+    border-right: 100vh solid #fff;
+    opacity: 0.1;
+}
+
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+    100%{
+        filter: hue-rotate(0deg);
+    }
+}
+
+.boxin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+    transition: 0.5s;
+    background: #fff;
+}
+
+.boxin.active{
+    width: 330px;
+    height: 360px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+}
+
+.boxin .toggle{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+.boxin.active .toggle{
+    bottom: -40px;
+}
+
+.boxin h2{
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    color: #000;
+    border-bottom: 2px solid #000;
+    margin: 10px 0 20px 0;
+    transform: scale(0);
+}
+
+.boxin.active h2{
+    transform: scale(1);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.boxin form{
+    transform: scale(0);
+}
+
+.boxin.active form{
+    transform: scale(1);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.boxin input[type="email"],
+.boxin input[type="password"]{
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    color: #000;
+    outline: none;
+    background: initial; 
+    border: 1px solid #000; 
+    border-radius: 25px; 
+    -moz-border-radius: 25px; 
+    -webkit-border-radius: 25px;
+}
+
+.boxin .btn{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+}
+
+.boxin a{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    color: #000;
+    transform: scale(0);
+}
+
+.boxin.active a{
+    transform: scale(1);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.boxin a:hover{
+    text-decoration: underline;
+}

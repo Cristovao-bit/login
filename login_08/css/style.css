@@ -1,0 +1,87 @@
+*,*:before,*:after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/background_login.jpg);
+    background-size: cover;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    text-align: center;
+}
+
+.login_form{
+    position: relative;
+    padding: 60px 30px;
+    transition: .5s;
+}
+
+.login_form:hover{
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.login_form h1{
+    margin: 0 0 20px;
+    color: #fff;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.login_form input{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 0.875em;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    background: rgba(255,255,255,0.1);
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+}
+
+.login_form input::placeholder{
+    color: #fff;
+}
+
+.login_form input[type="submit"]{
+    color: #fff;
+    background: #0072ff;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.login_form input[type="submit"]:hover{
+    background: #005aca;
+}
+
+.login_form a{
+    font-size: 0.875em;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
